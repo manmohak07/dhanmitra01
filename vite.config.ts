@@ -13,7 +13,7 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'https://dhanmitra.onrender.com',
+        target: 'https://dhanmitra01.onrender.com',
         changeOrigin: true,
         secure: false
       }

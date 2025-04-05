@@ -48,7 +48,7 @@ const RoadmapForm: React.FC<RoadmapFormProps> = ({ onRoadmapGenerated, setLoadin
     try {
       // Try direct fetch first with more detailed error handling
       console.log('Trying direct fetch to API...');
-      const directResponse = await fetch('https://dhanmitra.onrender.com/api/roadmap/generate', {
+      const directResponse = await fetch('https://dhanmitra01.onrender.com/api/roadmap/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const RoadmapForm: React.FC<RoadmapFormProps> = ({ onRoadmapGenerated, setLoadin
         try {
           console.log('Trying XMLHttpRequest as last resort...');
           const xhr = new XMLHttpRequest();
-          xhr.open('POST', 'https://dhanmitra.onrender.com/api/roadmap/generate', true);
+          xhr.open('POST', 'https://dhanmitra01.onrender.com/api/roadmap/generate', true);
           xhr.setRequestHeader('Content-Type', 'application/json');
           xhr.onload = function() {
             if (xhr.status >= 200 && xhr.status < 300) {

@@ -1,5 +1,5 @@
 // API client for communicating with the backend
-const API_URL = 'https://dhanmitra.onrender.com/api';
+const API_URL = 'https://dhanmitra01.onrender.com/api';
 
 // Helper function for making API requests
 const apiRequest = async (endpoint: string, options: RequestInit = {}) => {
