@@ -11,7 +11,7 @@ const googleAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY);
 export const generateInvestmentRoadmap = async (userInput) => {
   try {
     // Access the model (Gemini Pro is a good choice for this task)
-    const model = googleAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = googleAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     // Construct the prompt
     const prompt = `

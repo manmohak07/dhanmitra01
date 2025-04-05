@@ -319,7 +319,7 @@ export async function generateInvestmentRoadmap(formData: InvestmentFormData): P
     console.log("Initializing Google Generative AI with API key:", API_KEY);
     
     // Use the Gemini Pro model
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     console.log("Model initialized, generating content...");
     
     const result = await model.generateContent(prompt);
