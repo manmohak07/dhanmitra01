@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Roadmap API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Roadmap API</h1>
+    <button id="testBtn">Generate Roadmap</button>
+    <div id="result">
+        <h2>Response:</h2>
+        <pre id="response">Click the button to test the API...</pre>
+    </div>
+
+    <script>
+        document.getElementById('testBtn').addEventListener('click', async () => {
+            const responseElement = document.getElementById('response');
+            responseElement.textContent = 'Loading...';
+            
+            try {
+                const response = await fetch('https://dhanmitra.onrender.com/api/roadmap/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        age: 30,
+                        monthlyIncome: 50000,
+                        currentSavings: 100000,
+                        riskTolerance: 'Medium',
+                        financialGoals: ['Retirement', 'Home Purchase'],
+                        timeframe: '10 years'
+                    })
+                });
+                
+                const data = await response.json();
+                responseElement.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseElement.textContent = `Error: ${error.message}`;
+                console.error('API Error:', error);
+            }
+        });
+    </script>
+</body>
+</html> 

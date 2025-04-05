@@ -1,0 +1,92 @@
+{
+  "suggestions": [
+    {
+      "id": "student",
+      "title": "College Student",
+      "description": "Smart planning for your education expenses",
+      "recommendations": [
+        {
+          "title": "Semester Fee Planning",
+          "description": "Put 2nd to 5th semester fees in Fixed Deposits (safer returns), and 6th to 8th semester fees in Mutual Funds (potential for higher returns)",
+          "rationale": "Early semester fees need more security, while later ones have time to grow"
+        },
+        {
+          "title": "Emergency Fund",
+          "description": "Keep 3 months of expenses in a high-yield savings account",
+          "rationale": "Quick access to funds for unexpected needs"
+        },
+        {
+          "title": "Skill Development",
+          "description": "Invest 10% of savings in online courses and certifications",
+          "rationale": "Improving employability alongside financial growth"
+        }
+      ]
+    },
+    {
+      "id": "young-professional",
+      "title": "Young Professional",
+      "description": "Building wealth in early career",
+      "recommendations": [
+        {
+          "title": "Tax Saving Strategy",
+          "description": "Maximize 80C through ELSS funds (₹1.5L) and NPS (additional ₹50k)",
+          "rationale": "Tax benefits with potential for high returns"
+        },
+        {
+          "title": "Home Down Payment",
+          "description": "50% in debt funds, 30% in high-yield FDs, 20% in liquid funds",
+          "rationale": "Balanced approach for 3-5 year home buying goal"
+        },
+        {
+          "title": "Career Growth",
+          "description": "Invest in advanced certifications through RD savings",
+          "rationale": "Regular saving for skill enhancement"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "title": "Family Person",
+      "description": "Securing family's future",
+      "recommendations": [
+        {
+          "title": "Children's Education",
+          "description": "Start SIP in aggressive hybrid funds 15 years before college",
+          "rationale": "Long-term growth with reducing risk as goal approaches"
+        },
+        {
+          "title": "Health Security",
+          "description": "Family floater health insurance + top-up plan + emergency corpus in FDs",
+          "rationale": "Comprehensive health security"
+        },
+        {
+          "title": "Retirement Planning",
+          "description": "40% equity MFs, 30% NPS, 30% debt instruments",
+          "rationale": "Balanced portfolio for long-term wealth creation"
+        }
+      ]
+    },
+    {
+      "id": "senior",
+      "title": "Senior Citizen",
+      "description": "Preserving wealth with steady income",
+      "recommendations": [
+        {
+          "title": "Regular Income",
+          "description": "SCSS (60%), Monthly Income Plans (20%), Liquid Funds (20%)",
+          "rationale": "Focus on regular income with capital preservation"
+        },
+        {
+          "title": "Healthcare Fund",
+          "description": "Super Top-up Health Insurance + FD ladder for medical expenses",
+          "rationale": "Managing increasing healthcare costs"
+        },
+        {
+          "title": "Legacy Planning",
+          "description": "Balance between PMVVY, tax-free bonds, and short-term debt funds",
+          "rationale": "Efficient wealth transfer while maintaining liquidity"
+        }
+      ]
+    }
+  ]
+}
